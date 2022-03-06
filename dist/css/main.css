@@ -1,0 +1,271 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-dark, .btn-light, .btn-main {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #CCCCFF;
+  background-color: #D27D2D;
+}
+.btn-light {
+  color: #673147;
+  background-color: #EADDCA;
+}
+.btn-dark {
+  color: #E6E6FA;
+  background-color: #5C4033;
+  font-weight: bold;
+}
+
+button[class^=btn-]:hover,
+a[class^=btn-]:hover,
+input[class^=btn-]:hover {
+  background-color: #D27D2D;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 0.2rem;
+  width: 30rem;
+  background: #D27D2D;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Shizuru", cursive;
+  line-height: 1.6;
+  background: #f0ffff;
+}
+
+a {
+  text-decoration: none;
+  color: #EADDCA;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #EADDCA;
+  text-transform: uppercase;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+#main-nav ul {
+  display: flex;
+}
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+#main-nav a {
+  text-decoration: none;
+  color: #EADDCA;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+}
+#main-nav a:hover {
+  border-color: #7B3F00;
+}
+#main-nav a.current {
+  border-color: #D27D2D;
+}
+
+#header-home {
+  background: url("../img/showcase1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #EADDCA;
+}
+#header-home .header-content {
+  text-align: center;
+  padding-top: 15%;
+}
+#header-home .header-content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+#home-a .specials {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+#home-a .specials .fa-2x {
+  color: #D27D2D;
+  padding-bottom: 0.4rem;
+}
+#home-b .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home-b .stats li {
+  line-height: 3;
+}
+#home-b .stats li.stats-title {
+  font-size: 1.5rem;
+}
+#home-b .stats li.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#home-b .stats div {
+  padding: 3rem 0;
+}
+#home-b .stats div:nth-child(odd) {
+  background: #EADDCA;
+  color: #7B3F00;
+}
+#home-b .stats div:nth-child(even) {
+  background: #7B3F00;
+  color: #EADDCA;
+}
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+#home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  background: #D27D2D;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  padding: 1rem;
+  transition: all 1s;
+}
+#home-c .process-icon {
+  border-radius: 50%;
+  background: #5C4033;
+  color: #EADDCA;
+  padding: 2rem;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  position: relative;
+  transition: all 1s;
+}
+#home-c .process-icon:hover {
+  background: #D27D2D;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+}
+#home-c .process-icon:hover .process-step {
+  background: #5C4033;
+}
+
+#main-footer {
+  background: #5C4033;
+  color: #EADDCA;
+  height: 5rem;
+}
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px #EADDCA solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+#main-footer .footer-content .social .fab:hover {
+  background: #D27D2D;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  transition: all 1s;
+}
+
+/*# sourceMappingURL=main.css.map */
